@@ -125,12 +125,12 @@ $row_company = $company->fetchAll();
                     <ul class="submenu">
                         <li class="submenu-item">
                             <a href="policy" class="sidebar-link">Policy</a>
-                            <a href="#" class="sidebar-link">Safety</a>
-                            <a href="#" class="sidebar-link">Measure</a>
-                            <a href="#" class="sidebar-link">Social policy</a>
-                            <a href="#" class="sidebar-link">Use of personal</a>
-                            <a href="#" class="sidebar-link">Regulations</a>
-                            <a href="#" class="sidebar-link">Activity</a>
+                            <a href="safety" class="sidebar-link">Safety</a>
+                            <a href="measure" class="sidebar-link">Measure</a>
+                            <a href="social_policy" class="sidebar-link">Social policy</a>
+                            <a href="use_of_personal" class="sidebar-link">Use of personal</a>
+                            <a href="regulation" class="sidebar-link">Regulations</a>
+                            <a href="activity" class="sidebar-link">Activity</a>
                         </li>
                     </ul>
                 </li>
@@ -163,4 +163,4 @@ $row_company = $company->fetchAll();
             </ul>
         </div>
     </div>
-<
+</div>
