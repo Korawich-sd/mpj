@@ -153,7 +153,23 @@ $row_company = $company->fetchAll();
                         </li>
                     </ul>
                 </li>
+                <li class="sidebar-item contact has-sub" id="contact">
+                    <a href="contact" class='sidebar-link'>
+                        <i class="bi bi-envelope"></i>
+                        <span>Manage Email</span>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <?php for ($i = 0; $i < count($row_company); $i++) { ?>
+                                <!-- <a href="email?company_id=<?php echo $row_company[$i]['company_id'] ?>" class="sidebar-link"><?php echo $row_company[$i]['company_name']; ?></a> -->
+                                <a href="<?php if($row_company[$i]['id'] == 1){echo "email_1";}else if($row_company[$i]['id'] == 2){echo "email_2";}else if($row_company[$i]['id'] == 3){echo "email_3";}else if($row_company[$i]['id'] == 4){echo "email_4";} ?>" class="sidebar-link"><?php echo $row_company[$i]['company_name']; ?></a>
+                            <?php } ?></a>
+                            <a href="work_with_us" class="sidebar-link">Work with us</a>
 
+
+                        </li>
+                    </ul>
+                </li>
                 <li class="sidebar-item " onclick="return confirm('Do you want to log out?'); ">
                     <a href="logout.php" class='sidebar-link'>
                         <i class="bi bi-box-arrow-left"></i>
